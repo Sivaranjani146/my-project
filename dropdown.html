@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Dropdown list using CSS</title>
+    <style>
+        .dropdown
+        {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-dptbtn {
+            background-color:blueviolet;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: burlywood;
+            min-width: 160px;
+            border: 2px solid;
+            border-radius: 5px;
+            box-shadow: 0px 8px, 16px rgba(0, 0 , 0 ,0.3);
+        }
+        .dropdown-content a {
+            color:black;
+            padding: 10px 16px;
+            display: block;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background-color:aliceblue;
+        }
+        .dropdown:hover .dropdown-content {
+            display:block;
+        }
+        .dropdown:hover .dropdown-dptbtn {
+            background-color: forestgreen;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Dropdrown using CSS</h1>
+        <div class = "dropdown">
+            <button class = "dropdown-dptbtn">Indian dish Menu!</button>
+            <div class = "dropdown-content">
+               <a href = "website.html">Briyani</a>
+               <a href = "#">Dosa</a>
+               <a href = "#">Idli</a>
+               <a href = "#">Sambar</a>
+               <a href = "#">Vadai</a>
+               <a href = "#">Rasam</a>
+               <a href = "#">Chapathi</a>
+               <a href = "#">Fish Curry</a>
+               <a href = "#">fried Rice</a>
+               <a href = "#">Chicken 65</a>
+            </div>
+        </div>
+    </body>
+</html>
